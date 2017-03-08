@@ -8,8 +8,10 @@ pip install -r requirements.txt
 ```
 
 - Get up your API key for Microsoft Cognitive Services
+
 > - Go to Microsoft Cognitive Services [Computer Vision API](https://www.microsoft.com/cognitive-services/en-us/computer-vision-api)
 > - Click *"Get started for free"*
+
 - Copy `config_keys.example.py` to `config_keys.py`, edit the file and paste your API key
   - Make sure it's the **Computer Vision API** key, not Emotions API or Faces API
 
