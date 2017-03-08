@@ -70,7 +70,12 @@ def get_cv_caption(url):
         'url': url
     }
     response = requests.post(_CV_URL, json=json_data, headers=headers)
-    return response.json()['description']['captions']
+    caption = ''
+    try:
+        caption = response.json()['description']['captions']
+    except KeyError:
+        caption = 'Error:', response.json()
+    return caption
 
 if __name__ == "__main__":
     main()
