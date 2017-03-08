@@ -31,7 +31,7 @@ def loop(session):
         print 'Age:', hopeful.age
         print 'Schools:', hopeful.schools
         print 'Jobs:', hopeful.jobs
-        print 'Bio:', hopeful.bio
+        print 'Bio:', hopeful.bio.encode('ascii', 'ignore')
         # send a post request to CV API
         for photo_url in hopeful.photos:
             print ' '
