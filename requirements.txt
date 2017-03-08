@@ -1,0 +1,5 @@
+pytz>=2016.10
+robobrowser>=0.5.3
+pynder>=0.0.11
+lxml>=3.7.3
+requests>=2.13.0
